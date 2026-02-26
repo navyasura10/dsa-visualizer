@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.791);
+}
+
+.dinosourimg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: sticky;
+    top: 0;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.menuList {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}

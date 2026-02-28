@@ -85,7 +85,7 @@ function Queue() {
                 </div>
             )}
 
-            <div className="outer-container">
+            <div className="queue-outer-container">
 
                 {/* HELP ICON */}
                 <div

@@ -48,25 +48,35 @@ function InputConversion() {
 
         setIsSorting(false);
     };
-
     return (
-        <>
-            <Card
-                currentValue={currentValue}
-                setCurrentValue={setCurrentValue}
-                setSelectedAlgo={setSelectedAlgo}
-                startSorting={startSorting}
-                isSorting={isSorting}
-                selectedAlgo={selectedAlgo}
-            />
+        <div className="main-container">
 
-            {hasStarted && selectedAlgo === "stack" ? (<Stack />)
-                : selectedAlgo === "queue" ? (<Queue />)
-                    : (<Visualizer
+            <div className="left-panel">
+                <Card
+                    currentValue={currentValue}
+                    setCurrentValue={setCurrentValue}
+                    setSelectedAlgo={setSelectedAlgo}
+                    startSorting={startSorting}
+                    isSorting={isSorting}
+                    selectedAlgo={selectedAlgo}
+                />
+            </div>
+
+            <div className="right-panel">
+                {hasStarted && selectedAlgo === "stack" ? (
+                    <Stack />
+                ) : selectedAlgo === "queue" ? (
+                    <Queue />
+                ) : (
+                    <Visualizer
                         items={items}
                         selectedAlgo={selectedAlgo}
-                        treeLevels={treeLevels} />)}
-        </>
+                        treeLevels={treeLevels}
+                    />
+                )}
+            </div>
+
+        </div>
     );
 }
 export default InputConversion;

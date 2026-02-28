@@ -1,0 +1,70 @@
+.about-container {
+    padding: 50px;
+    color: white;
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-container h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.about-container h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #d1d5db;
+}
+
+/* Legend layout */
+.legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* Color boxes */
+.color {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+/* === YOUR EXACT COLORS === */
+
+.default {
+    background-color: #3b82f6;
+}
+
+.comparing {
+    background: red;
+}
+
+.swapping {
+    background: rgb(210, 30, 171);
+}
+
+.sorted {
+    background: limegreen;
+}
+
+.dividing {
+    background-color: rgb(233, 92, 22);
+}
+
+.merging {
+    background-color: rgb(10, 120, 10);
+}
+
+.pivot {
+    background: chocolate;
+}

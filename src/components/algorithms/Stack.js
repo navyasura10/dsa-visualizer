@@ -53,7 +53,7 @@ function Stack() {
     };
 
     return (
-        <div className="outer-container">
+        <div className="stack-outer-container">
 
             {/* Help Icon */}
             <div

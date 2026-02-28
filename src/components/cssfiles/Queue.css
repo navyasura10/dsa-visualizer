@@ -1,6 +1,6 @@
 /* BASE — Mobile First */
 
-.outer-container {
+.queue-outer-container {
     width: 95%;
     margin: 30px auto;
     padding: 25px;
@@ -11,6 +11,7 @@
     gap: 30px;
     background: #000;
     box-sizing: border-box;
+    position: relative;
 }
 
 /* QUEUE VISUAL SECTION */
@@ -18,11 +19,10 @@
 .queue-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .queue-box {
-    width: 90%;
+    width: 74%;
     min-height: 7%;
     background: #111;
     border-radius: 15px;
@@ -47,11 +47,11 @@
 }
 
 .queue-item.front {
-    background: #333;
+    background: #134409;
 }
 
 .queue-item.rear {
-    background: #444;
+    background: #440909;
 }
 
 .queue-label {
@@ -171,19 +171,20 @@
 
 @media (min-width: 768px) {
 
-    .outer-container {
-        flex-direction: row;
+    .queue-outer-container {
+        flex-direction: column;
         /* side by side */
-        justify-content: space-between;
         align-items: stretch;
         /* equal height */
-        max-width: 900px;
+        min-width: 45%;
+        min-height: 79%;
         padding: 40px;
         margin-right: 20px;
+        margin-left: 20px;
     }
 
     .row input {
-        max-width: 50px;
+        max-width: 100px;
     }
 
     .queue-item {
@@ -198,15 +199,22 @@
 
     .queue-section,
     .control-section {
-        width: 50%;
+        /* width: 50%; */
         display: flex;
         flex-direction: column;
     }
 
+    .queue-section {
+        align-items: center;
+    }
+
     .queue-box {
-        flex: 1;
-        /* fill height */
+        max-width: 60%;
         max-height: 70px;
+    }
+
+    .queue-item {
+        max-width: 90px;
     }
 
     .message-box {

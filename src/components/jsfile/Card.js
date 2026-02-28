@@ -4,6 +4,7 @@ function Card(props) {
     const { currentValue, setCurrentValue, setSelectedAlgo, startSorting, isSorting, selectedAlgo } = props;
     return (
         <div className="container">
+            <h1 className="heading">  Dsa Visualizer</h1>
             <form onSubmit={startSorting}>
                 <div className="buttons">
                     <button type="button"
@@ -38,7 +39,7 @@ function Card(props) {
                         disabled={isSorting}> Queue</button>
                 </div>
 
-                <label htmlFor="values">Input :</label><br />
+                <label className="input-label" htmlFor="values">Input :</label>
 
                 <input
                     type="text"

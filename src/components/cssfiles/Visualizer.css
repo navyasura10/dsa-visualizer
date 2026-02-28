@@ -4,9 +4,10 @@
     justify-content: center;
     gap: 12px;
     height: 400px;
-    background-color: #090909fe;
+    background-color: #000000;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
     margin: 20px;
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
     overflow-x: auto;
@@ -123,7 +124,7 @@
 }
 
 .merging {
-    background-color: rgb(120, 10, 84);
+    background-color: rgb(10, 120, 10);
 }
 
 .tree-node.sorted {
@@ -166,7 +167,8 @@
 
 @media (min-width:768px) {
     .visualizercontainer {
-        width: 50%;
+        width: 90%;
         height: 500px;
+        margin-top: 30px;
     }
 }

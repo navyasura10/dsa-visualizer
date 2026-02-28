@@ -2,23 +2,25 @@
    MAIN CONTAINER
 ================================= */
 
-.outer-container {
+.stack-outer-container {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    width: 90%;
-    max-width: 1000px;
+    margin: 20px;
+    width: 95%;
     margin: 40px auto;
     padding: 40px;
     border-radius: 20px;
-    background: #0d0d0d;
+    background: black;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
     box-sizing: border-box;
 }
 
 .stack-label {
-    margin-right: 60px;
+    margin-left: 50px;
+    margin-bottom: 10px;
 }
 
 /* ===============================
@@ -106,6 +108,7 @@
 .stack-section {
     width: 45%;
     text-align: center;
+    gap: 0%;
 }
 
 .stack-box {
@@ -154,7 +157,6 @@
     width: 45%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     color: white;
 }
 
@@ -225,14 +227,18 @@
    RESPONSIVE DESIGN
 ================================= */
 
-@media (max-width: 768px) {
-    .outer-container {
-        flex-direction: column;
-        gap: 40px;
+@media (min-width: 768px) {
+    .stack-outer-container {
+        flex-direction: row;
+        max-width: 92%;
+        margin-top: 30px;
+        margin-left: 20px;
+        padding-bottom: 0;
+
     }
 
     .stack-section,
     .control-section {
-        width: 100%;
+        width: 45%;
     }
 }

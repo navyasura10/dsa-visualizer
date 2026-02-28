@@ -176,11 +176,11 @@
         /* side by side */
         align-items: stretch;
         /* equal height */
-        min-width: 45%;
+        min-width: 80%;
         min-height: 79%;
         padding: 40px;
-        margin-right: 20px;
         margin-left: 20px;
+        margin-right: 40px;
     }
 
     .row input {

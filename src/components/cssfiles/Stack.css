@@ -231,6 +231,7 @@
     .stack-outer-container {
         flex-direction: row;
         max-width: 92%;
+        min-height: 79%;
         margin-top: 40px;
         margin-left: 20px;
         padding-bottom: 5px;

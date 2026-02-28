@@ -98,8 +98,8 @@
 
 /*   bar styles */
 .visual-item.current {
-    border: 3px solid rgb(221, 204, 19);
-    box-shadow: 0 0 10px rgba(247, 242, 242, 0.6);
+    border: 3px solid rgb(232, 231, 223);
+    box-shadow: 0 0 10px rgba(243, 208, 208, 0.406);
     transform: scale(1.1);
 }
 
@@ -168,7 +168,7 @@
 @media (min-width:768px) {
     .visualizercontainer {
         width: 90%;
-        height: 500px;
-        margin-top: 50px;
+        min-height: 79%;
+        margin-top: 40px;
     }
 }

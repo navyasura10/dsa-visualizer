@@ -243,3 +243,16 @@
         width: 45%;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1100px) {
+
+    .stack-outer-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .control-section {
+        margin-bottom: 50%;
+    }
+
+}
